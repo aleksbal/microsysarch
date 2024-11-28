@@ -14,6 +14,28 @@ The system is built around the following components:
 - OpenSearch (Searchable logs and metrics)
 - Prometheus & Grafana (Metrics and monitoring)
 
+Client 
+  |
+  v
+Reverse Proxy (TLS termination, DoS protection)
+  |
+  v
+API Gateway (Authorization, Routing, Rate Limiting)
+  |
+  +--> Service A
+  |
+  +--> Service B
+  |
+  +--> Service C
+  |
+  v
+Monitoring Stack:
+  +--> Fluentd -> OpenSearch -> OpenSearch Dashboards
+  +--> Prometheus -> Grafana
+  +--> Tracing -> Jaeger/OpenTelemetry
+  |
+Keycloak (User Management, Token Issuance)
+
 **GitHub Project Name:** **Microsysarch**
 
 ## Features and Components
