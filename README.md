@@ -1,4 +1,4 @@
-# Microsysarch  - Secure, Scalable, and Observable Microservice Architecture
+# Secure, Scalable, and Observable Microservice Architecture
 
 This project is structured as a demonstration of a secure and flexible microservice architecture. With token-based authorization, route management, and monitoring tools, these components integrate important concepts for a scalable and user-friendly system.
 
