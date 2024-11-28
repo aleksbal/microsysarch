@@ -1,5 +1,7 @@
 # Secure, Scalable, and Observable Microservice Architecture
 
+**Goal of this project:** Test and learn to set up a secure, scalable, and observable microservice architecture.
+
 This project is structured as a demonstration of a secure and flexible microservice architecture. With token-based authorization, route management, and monitoring tools, these components integrate important concepts for a scalable and user-friendly system.
 
 The whole demonstrator is based on docker compose with several configuration files for individual architecture members.
@@ -53,7 +55,7 @@ Keycloak (User Management, Token Issuance)
 * Kong API Gateway:
   - Authenticates API calls using token-based authentication (JWT)
   - Performs validity checks for expired, malformed, or unauthorized requests
-  - Rate limiting and IP-based restrictions
+  - RBAC (role based access control)
 
 * Keycloak:
   - User management
@@ -72,8 +74,6 @@ Keycloak (User Management, Token Issuance)
 * OpenSearch:
   - Searchable and queryable logs
   - Integrates with Fluentd and other collectors
-
-**Goal of this project:** Test and learn to set up a secure, scalable, and observable microservice architecture.
 
 **How to Run**
 
