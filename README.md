@@ -31,6 +31,9 @@ API Gateway (Authorization, Routing, Rate Limiting)
   |
   +--> Service C
   |
+      .
+      .
+      .
   v
 Monitoring Stack:
   +--> Fluentd -> OpenSearch -> OpenSearch Dashboards
