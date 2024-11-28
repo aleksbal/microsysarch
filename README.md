@@ -30,10 +30,10 @@ API Gateway (Authorization, Routing, Rate Limiting)
   +--> Service B
   |
   +--> Service C
+      .
+      .
+      .
   |
-      .
-      .
-      .
   v
 Monitoring Stack:
   +--> Fluentd -> OpenSearch -> OpenSearch Dashboards
