@@ -14,8 +14,6 @@ The system is built around the following components:
 - OpenSearch (Searchable logs and metrics)
 - Prometheus & Grafana (Metrics and monitoring)
 
-## Potential Architecture Diagram (with Refinements)
-
 Below is a high-level representation of the architecture demonstrating the flow of traffic and the integration of components.
 
 ```plaintext
@@ -41,8 +39,6 @@ Monitoring Stack:
   |
 Keycloak (User Management, Token Issuance)
 ```
-
-**GitHub Project Name:** **Microsysarch**
 
 ## Features and Components
 
