@@ -1,0 +1,12 @@
+_format_version: "2.1"
+services:
+  - name: service_one
+    url: http://service_one:5000
+    routes:
+      - name: service_one_route
+        paths:
+          - /service-one
+        methods:
+          - GET
+plugins:
+  - name: jwt
