@@ -49,6 +49,17 @@ services:
     networks:
       - backend
 
+  reverse_proxy_metrics:
+    image: nginx/nginx-prometheus-exporter:latest
+    container_name: reverse_proxy_metrics
+    ports:
+      - "9113:9113"
+    command: -nginx.scrape-uri=http://reverse_proxy/nginx_status
+    depends_on:
+      - reverse_proxy
+    networks:
+      - monitoring
+
   service_one:
     image: python:3.9-slim
     container_name: service_one
